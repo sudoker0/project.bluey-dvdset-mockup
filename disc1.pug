@@ -1,0 +1,144 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./style/style.css")
+        link(rel="stylesheet", href="./style/disc/disc.css")
+        script(src="./scripts/script.js" defer)
+        title Document
+    body
+        .main
+            img(src="./img/bluey-trademark-white.svg", alt="")
+            h2 Disc 1: Season 1 (Episode 1 - 40)
+        .image
+            img(src="./img/backdrop_1.jpg", alt="f")
+        .menu#bottom_menu
+            .popup
+                input.popup_button#play-all(type="checkbox")
+                label.popup_label(for="play-all") Play all
+                .menu_popup#play-all-menu.flex_container
+                    a(href="#") Play all with original versions
+                    a(href="#") Play all with alternative versions
+
+            .popup
+                input.popup_button#episodes(type="checkbox")
+                label.popup_label(for="episodes") Episodes
+                .menu_popup#episodes_menu
+                    .page(data-num="1").show
+                        h4 Season 1
+                        .grid_container
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-magic-xylophone/") 1. Magic Xylophone
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/hospital/") 2. Hospital
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/keepy-uppy/") 3. Keepy Uppy
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/daddy-robot/") 4. Daddy Robot
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/shadowlands/") 5. Shadowlands
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-weekend/") 6. The Weekend
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/bbq/") 7. BBQ
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/fruitbat/") 8. Fruitbat
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/horsey-ride/") 9. Horsey Ride
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/hotel/") 10. Hotel
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/bike/") 11. Bike
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/bob-bilby/") 12. Bob Bilby
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/spy-game/") 13. Spy Game
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/takeaway/") 14. Takeaway
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/butterflies/") 15. Butterflies
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/yoga-ball/") 16. Yoga Ball
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/calypso/") 17. Calypso
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-doctor/") 18. The Doctor
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-claw/") 19. The Claw
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/markets/") 20. Markets
+                    .page(data-num="2")
+                        .grid_container
+                            h4 Season 1
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/blue-mountains/") 21. Blue Mountains
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-pool/") 22. The Pool
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/shops/") 23. Shops
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/wagon-ride/") 24. Wagon Ride
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/taxi/") 25. Taxi
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-beach/") 26. The Beach
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/pirates/") 27. Pirates
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/grannies/") 28. Grannies
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-creek/") 29. The Creek
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/fairies/") 30. Fairies
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/work/") 31. Work
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/bumpy-and-the-wise-old-wolfhound/") 32. Bumpy and the Wise Old Wolfhound
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/trampoline/") 33. Trampoline
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-dump/") 34. The Dump
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/zoo/") 35. Zoo
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/backpackers/") 36. Backpackers
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-adventure/") 37. The Adventure
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/copycat/") 38. Copycat
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/the-sleepover/") 39. The Sleepover
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/early-baby/") 40. Early Baby
+                    .control
+                        button.prev < Prev
+                        button.next Next >
+
+            .popup
+                input.popup_button#setup(type="checkbox")
+                label.popup_label(for="setup") Setup
+                .menu_popup#setup_menu.grid_container
+                    .audio
+                        h4 Audio
+                        .selector.flex_container
+                            input#audio_english(type="radio", name="audio_select")
+                            label(for="audio_english") English
+                            input#audio_spanish(type="radio", name="audio_select")
+                            label(for="audio_spanish") Español
+                            input#audio_french(type="radio", name="audio_select")
+                            label(for="audio_french") Français
+                    .subtitles
+                        h4 Subtitles
+                        .selector.flex_container
+                            input#subtitles_czech(type="radio", name="subtitles_select")
+                            label(for="subtitles_czech") Čeština
+                            input#subtitles_english(type="radio", name="subtitles_select")
+                            label(for="subtitles_english") English
+                            input#subtitles_spanish(type="radio", name="subtitles_select")
+                            label(for="subtitles_spanish") Español
+                            input#subtitles_french(type="radio", name="subtitles_select")
+                            label(for="subtitles_french") Français
+                            input#subtitles_polish(type="radio", name="subtitles_select")
+                            label(for="subtitles_polish") Polski
+                    .commentary
+                        h4 Commentary (English only)
+                        .selector.flex_container
+                            input#commentary_on(type="radio", name="commentary_select")
+                            label(for="commentary_on") On
+                            input#commentary_off(type="radio", name="commentary_select")
+                            label(for="commentary_off") Off
+
+            .popup
+                input.popup_button#extras(type="checkbox")
+                label.popup_label(for="extras") Extras
+                .menu_popup#extras_menu.grid_container
+                    .alternative_versions
+                        h4 Alternative Versions
+                        .grid_container
+                            a(target="_blank" href="#") BBQ
+                            a(target="_blank" href="#") Early Baby
+                    .american_dub
+                        h4 American Dub
+                        .grid_container
+                            a(target="_blank" href="#") The Weekend
+                            a(target="_blank" href="#") BBQ
+                            a(target="_blank" href="#") Bob Billy
+                    .bonus
+                        h4 Bonus Bits
+                        .grid_container
+                            a(target="_blank" href="https://www.youtube.com/watch?v=Z-K7fn9KsD0") Silent Night
+                            a(target="_blank" href="https://www.youtube.com/watch?v=oM-Maqco510") Crazy Christmas Light
+                            a(target="_blank" href="https://www.youtube.com/watch?v=5bD3jBa39Eo") Jingle Bells
+                            a(target="_blank" href="https://www.bluey.tv/watch/bonus-bits/lollipop-song/") Lollipop Song
+                    .ad
+                        h4 Advertisements
+                        .grid_container
+                            a(href="#") Season 1
+                            a(href="#") Season 2
+                            a(href="#") Season 3
+                            a(href="#") ABC iView Promotion
+                            a(href="#") 12 days of Bluey
+                            a(href="#") Bluey's most wanted
+                            a(href="#") Every. Episode. Ever.
+                            a(href="#") "Best Bits" Marathons

@@ -1,0 +1,134 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./style/style.css")
+        link(rel="stylesheet", href="./style/disc/disc.css")
+        script(src="./scripts/script.js" defer)
+        title Document
+    body
+        .main
+            img(src="./img/bluey-trademark-white.svg", alt="")
+            h2 Disc 3: Season 2 (Episode 29 - 52) + Season 3 (Episode 1 - 16)
+        .image
+            img(src="./img/backdrop_1.jpg", alt="f")
+        .menu#bottom_menu
+            .popup
+                input.popup_button#play-all(type="checkbox")
+                label.popup_label(for="play-all") Play all
+                .menu_popup#play-all-menu.flex_container
+                    a(href="#") Play all with original versions
+                    a(href="#") Play all with alternative versions
+
+            .popup
+                input.popup_button#episodes(type="checkbox")
+                label.popup_label(for="episodes") Episodes
+                .menu_popup#episodes_menu
+                    .page(data-num="1").show
+                        h4 Season 2
+                        .grid_container
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/movies/") 29. Movies
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/library/") 30. Library
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/barky-boats/") 31. Barky Boats
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/burger-shop/") 32. Burger Shop
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/circus/") 33. Circus
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/swim-school/") 34. Swim School
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/cafe/") 35. Café
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/postman/") 36. Postman
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/the-quiet-game/") 37. The Quiet Game
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/mr-monkey-jocks/") 38. Mr Monkeyjocks
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/double-babysitter/") 39. Double Babysitter
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/bad-mood/") 40. Bad Mood
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/octopus/") 41. Octopus
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/bin-night/") 42. Bin Night
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/muffin-cone/") 43. Muffin Cone
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/duck-cake/") 44. Duck Cake
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/handstand/") 45. Handstand
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/road-trip/") 46. Road Trip
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/ice-cream/") 47. Ice Cream
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/dunny-2/") 48. Dunny
+                    .page(data-num="2")
+                        h4 Season 2
+                        .grid_container
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/baby-race/") 49. Typewriter
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/grandad/") 50. Baby Race
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/christmas-swim/") 51. Christmas Swim
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/easter/") 52. Easter
+                        h4 Season 3
+                        .grid_container
+                            a(href="https://www.bluey.tv/watch/season-3/perfect/") 1. Perfect
+                            a(href="https://www.bluey.tv/watch/season-3/bedroom/") 2. Bedroom
+                            a(href="https://www.bluey.tv/watch/season-3/obstacle-course/") 3. Obstacle Course
+                            a(href="https://www.bluey.tv/watch/season-3/promises/") 4. Promises
+                            a(href="https://www.bluey.tv/watch/season-3/omelette/") 5. Omelette
+                            a(href="https://www.bluey.tv/watch/season-3/born-yesterday/") 6. Born Yesterday
+                            a(href="https://www.bluey.tv/watch/season-3/mini-bluey/") 7. Mini Bluey
+                            a(href="https://www.bluey.tv/watch/season-3/unicorse/") 8. Unicorse
+                            a(href="https://www.bluey.tv/watch/season-3/curry-quest/") 9. Curry Quest
+                            a(href="https://www.bluey.tv/watch/season-3/magic/") 10. Magic
+                            a(href="https://www.bluey.tv/watch/season-3/chest/") 11. Chest
+                            a(href="https://www.bluey.tv/watch/season-3/sheepdog/") 12. Sheepdog
+                            a(href="https://www.bluey.tv/watch/season-3/housework/") 13. Housework
+                            a(href="https://www.bluey.tv/watch/season-3/pass-the-parcel/") 14. Pass the Parcel
+                            a(href="https://www.bluey.tv/watch/season-3/explorers/") 15. Explorers
+                            a(href="https://www.bluey.tv/watch/season-3/phones/") 16. Phones
+                    .control
+                        button.prev < Prev
+                        button.next Next >
+
+            .popup
+                input.popup_button#setup(type="checkbox")
+                label.popup_label(for="setup") Setup
+                .menu_popup#setup_menu.grid_container
+                    .audio
+                        h4 Audio
+                        .selector.flex_container
+                            input#audio_english(type="radio", name="audio_select")
+                            label(for="audio_english") English
+                            input#audio_spanish(type="radio", name="audio_select")
+                            label(for="audio_spanish") Español
+                            input#audio_french(type="radio", name="audio_select")
+                            label(for="audio_french") Français
+                    .subtitles
+                        h4 Subtitles
+                        .selector.flex_container
+                            input#subtitles_czech(type="radio", name="subtitles_select")
+                            label(for="subtitles_czech") Čeština
+                            input#subtitles_english(type="radio", name="subtitles_select")
+                            label(for="subtitles_english") English
+                            input#subtitles_spanish(type="radio", name="subtitles_select")
+                            label(for="subtitles_spanish") Español
+                            input#subtitles_french(type="radio", name="subtitles_select")
+                            label(for="subtitles_french") Français
+                            input#subtitles_polish(type="radio", name="subtitles_select")
+                            label(for="subtitles_polish") Polski
+                    .commentary
+                        h4 Commentary (English only)
+                        .selector.flex_container
+                            input#commentary_on(type="radio", name="commentary_select")
+                            label(for="commentary_on") On
+                            input#commentary_off(type="radio", name="commentary_select")
+                            label(for="commentary_off") Off
+
+            .popup
+                input.popup_button#extras(type="checkbox")
+                label.popup_label(for="extras") Extras
+                .menu_popup#extras_menu.grid_container
+                    .american_dub
+                        h4 American Dub
+                        .grid_container
+                            a(target="_blank" href="#") Circus
+                            a(target="_blank" href="#") Baby Race
+                            a(target="_blank" href="#") Explorers
+                    .bonus
+                        h4 Bonus Bits
+                        .grid_container
+                            a(target="_blank" href="https://www.bluey.tv/watch/bonus-bits/5231/") Green Bottles
+                            a(target="_blank" href="https://www.bluey.tv/watch/bonus-bits/tea-party/") Tea Party
+                            a(target="_blank" href="https://www.bluey.tv/watch/bonus-bits/one-man-went-to-mow/") One man went to mow
+                            a(target="_blank" href="https://www.bluey.tv/watch/bonus-bits/highball/") Highball
+                    .ad
+                        h4 Advertisements
+                        .grid_container
+                            a(href="#") CBeebies UK Ad

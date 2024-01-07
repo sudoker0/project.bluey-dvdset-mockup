@@ -1,0 +1,120 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./style/style.css")
+        link(rel="stylesheet", href="./style/disc/disc.css")
+        script(src="./scripts/script.js" defer)
+        title Document
+    body
+        .main
+            img(src="./img/bluey-trademark-white.svg", alt="")
+            h2 Disc 4: Season 3 (Episode 17 - 47)
+        .image
+            img(src="./img/backdrop_1.jpg", alt="f")
+        .menu#bottom_menu
+            .popup
+                input.popup_button#play-all(type="checkbox")
+                label.popup_label(for="play-all") Play all
+                .menu_popup#play-all-menu.flex_container
+                    a(href="#") Play all with original versions
+                    a(href="#") Play all with alternative versions
+
+            .popup
+                input.popup_button#episodes(type="checkbox")
+                label.popup_label(for="episodes") Episodes
+                .menu_popup#episodes_menu
+                    .page(data-num="1").show
+                        h4 Season 3
+                        .grid_container
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/pavlova/") 17. Pavlova
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/rain/") 18. Rain
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/pizza-girls/") 19. Pizza Girls
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/driving/") 20. Driving
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/tina/") 21. Tina
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/whale-watching/") 22. Whale Watching
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/family-meeting/") 23. Family Meeting
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/faceytalk/") 24. Faceytalk
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/ragdoll/") 25. Ragdoll
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/fairytale/") 26. Fairytale
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/musical-statues/") 27. Musical Statues
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/stories/") 28. Stories
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/puppets/") 29. Puppets
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/turtleboy/") 30. Turtleboy
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/onesies/") 31. Onesies
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/tradies/") 32. Tradies
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/granny-mobile/") 33. Granny Mobile
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/space/") 34. Space
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/smoochy-kiss/") 35. Smoochy Kiss
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/dirt/") 36. Dirt
+                    .page(data-num="2")
+                        h4 Season 3
+                        .grid_container
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-3/the-decider/") 37. The Decider
+                            a(target="_blank" href="#") 38. Cubby
+                            a(target="_blank" href="#") 39. Exercise
+                            a(target="_blank" href="#") 40. Relax
+                            a(target="_blank" href="#") 41. Stickbird
+                            a(target="_blank" href="#") 42. Show and Tell
+                            a(target="_blank" href="#") 43. Dragon
+                            a(target="_blank" href="#") 44. Wild Girls
+                            a(target="_blank" href="#") 45. TV Shop
+                            a(target="_blank" href="#") 46. Slide
+                            a(target="_blank" href="#") 47. Cricket
+                    .control
+                        button.prev < Prev
+                        button.next Next >
+
+            .popup
+                input.popup_button#setup(type="checkbox")
+                label.popup_label(for="setup") Setup
+                .menu_popup#setup_menu.grid_container
+                    .audio
+                        h4 Audio
+                        .selector.flex_container
+                            input#audio_english(type="radio", name="audio_select")
+                            label(for="audio_english") English
+                            input#audio_spanish(type="radio", name="audio_select")
+                            label(for="audio_spanish") Español
+                            input#audio_french(type="radio", name="audio_select")
+                            label(for="audio_french") Français
+                    .subtitles
+                        h4 Subtitles
+                        .selector.flex_container
+                            input#subtitles_czech(type="radio", name="subtitles_select")
+                            label(for="subtitles_czech") Čeština
+                            input#subtitles_english(type="radio", name="subtitles_select")
+                            label(for="subtitles_english") English
+                            input#subtitles_spanish(type="radio", name="subtitles_select")
+                            label(for="subtitles_spanish") Español
+                            input#subtitles_french(type="radio", name="subtitles_select")
+                            label(for="subtitles_french") Français
+                            input#subtitles_polish(type="radio", name="subtitles_select")
+                            label(for="subtitles_polish") Polski
+                    .commentary
+                        h4 Commentary (English only)
+                        .selector.flex_container
+                            input#commentary_on(type="radio", name="commentary_select")
+                            label(for="commentary_on") On
+                            input#commentary_off(type="radio", name="commentary_select")
+                            label(for="commentary_off") Off
+
+            .popup
+                input.popup_button#extras(type="checkbox")
+                label.popup_label(for="extras") Extras
+                .menu_popup#extras_menu.grid_container
+                    .alternative_versions
+                        h4 Alternative Versions
+                        .grid_container
+                            a(target="_blank" href="#") Exercise
+                    .american_dub
+                        h4 American Dub
+                        .grid_container
+                            a(target="_blank" href="#") Tradies
+                            a(target="_blank" href="#") The Decider
+                            a(target="_blank" href="#") Cricket
+                    .ad
+                        h4 Advertisements
+                        .grid_container
+                            a(href="#") Disney Jr Ad

@@ -1,0 +1,136 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./style/style.css")
+        link(rel="stylesheet", href="./style/disc/disc.css")
+        script(src="./scripts/script.js" defer)
+        title Document
+    body
+        .main
+            img(src="./img/bluey-trademark-white.svg", alt="")
+            h2 Disc 2: Season 1 (Episode 41 - 52) + Season 2 (Episode 1 - 28)
+        .image
+            img(src="./img/backdrop_1.jpg", alt="f")
+        .menu#bottom_menu
+            .popup
+                input.popup_button#play-all(type="checkbox")
+                label.popup_label(for="play-all") Play all
+                .menu_popup#play-all-menu.flex_container
+                    a(href="#") Play all with original versions
+                    a(href="#") Play all with alternative versions
+
+            .popup
+                input.popup_button#episodes(type="checkbox")
+                label.popup_label(for="episodes") Episodes
+                .menu_popup#episodes_menu
+                    .page(data-num="1").show
+                        h4 Season 1
+                        .grid_container
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/mums-and-dads/") 41. Mums and Dads
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/hide-and-seek/") 42. Hide and Seek
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/camping/") 43. Camping
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/mount-mumanddad/") 44. Mount Mumandad
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/kids/") 45. Kids
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/chickenrat/") 46. Chickenrat
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/neighbours/") 47. Neighbours
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/backpackers/") 48. Teasing
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/asparagus/") 49. Asparagus
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/shaun/") 50. Shaun
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/daddy-putdown/") 51. Daddy Putdown
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-1/verandah-santa/") 52. Verandah Santa
+                        h4 Season 2
+                        .grid_container
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/dance-mode/") 1. Dance Mode
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/hammerbarn/") 2. Hammerbarn
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/feather-wand/") 3. Featherwand
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/squash/") 4. Squash
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/hairdressers/") 5. Hairdressers
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/stumpfest/") 6. Stumpfest
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/favourite-thing/") 7. Favourite Thing
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/daddy-dropoff/") 8. Daddy Dropoff
+                    .page(data-num="2")
+                        h4 Season 2
+                        .grid_container
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/bingo/") 9. Bingo
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/rug-island/") 10. Rug Island
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/charades/") 11. Charades
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/sticky-gecko/") 12. Sticky Gecko
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/dad-baby/") 13. Dad Baby
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/mum-school/") 14. Mum School
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/trains/") 15. Trains
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/army/") 16. Army
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/fancy-restaurant/") 17. Fancy Restaurant
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/piggyback/") 18. Piggyback
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/the-show/") 19. The Show
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/ticklecrabs/") 20. Tickle Crabs
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/escape/") 21. Escape
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/bus/") 22. Bus
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/queens/") 23. Queens
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/flatpack/") 24. Flat Pack
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/helicopter/") 25. Helicopter
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/sleepytime/") 26. Sleepytime
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/grandad/") 27. Grandad
+                            a(target="_blank" href="https://www.bluey.tv/watch/season-2/see-saw/") 28. Seesaw
+                    .control
+                        button.prev < Prev
+                        button.next Next >
+
+            .popup
+                input.popup_button#setup(type="checkbox")
+                label.popup_label(for="setup") Setup
+                .menu_popup#setup_menu.grid_container
+                    .audio
+                        h4 Audio
+                        .selector.flex_container
+                            input#audio_english(type="radio", name="audio_select")
+                            label(for="audio_english") English
+                            input#audio_spanish(type="radio", name="audio_select")
+                            label(for="audio_spanish") Español
+                            input#audio_french(type="radio", name="audio_select")
+                            label(for="audio_french") Français
+                    .subtitles
+                        h4 Subtitles
+                        .selector.flex_container
+                            input#subtitles_czech(type="radio", name="subtitles_select")
+                            label(for="subtitles_czech") Čeština
+                            input#subtitles_english(type="radio", name="subtitles_select")
+                            label(for="subtitles_english") English
+                            input#subtitles_spanish(type="radio", name="subtitles_select")
+                            label(for="subtitles_spanish") Español
+                            input#subtitles_french(type="radio", name="subtitles_select")
+                            label(for="subtitles_french") Français
+                            input#subtitles_polish(type="radio", name="subtitles_select")
+                            label(for="subtitles_polish") Polski
+                    .commentary
+                        h4 Commentary (English only)
+                        .selector.flex_container
+                            input#commentary_on(type="radio", name="commentary_select")
+                            label(for="commentary_on") On
+                            input#commentary_off(type="radio", name="commentary_select")
+                            label(for="commentary_off") Off
+
+            .popup
+                input.popup_button#extras(type="checkbox")
+                label.popup_label(for="extras") Extras
+                .menu_popup#extras_menu.grid_container
+                    .alternative_versions
+                        h4 Alternative Versions
+                        .grid_container
+                            a(target="_blank" href="#") Chickenrat
+                            a(target="_blank" href="#") Teasing
+                            a(target="_blank" href="#") Flat Pack
+                    .american_dub
+                        h4 American Dub
+                        .grid_container
+                            a(target="_blank" href="#") Camping
+                            a(target="_blank" href="#") Dad Baby
+                            a(target="_blank" href="#") Sleepytime
+                    .bonus
+                        h4 Bonus Bits
+                        .grid_container
+                            a(href="https://www.bluey.tv/watch/bonus-bits/make-mum-laugh/") Make mum laugh
+                            a(href="https://www.bluey.tv/watch/bonus-bits/mower/") Mower
+                            a(href="https://www.bluey.tv/watch/bonus-bits/old-macdonald/") Old MacDonald
+                            a(href="https://www.bluey.tv/watch/bonus-bits/honk/") Honk

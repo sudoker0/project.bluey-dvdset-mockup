@@ -1,0 +1,40 @@
+.menu_popup {
+    &#episodes_menu {
+        .page {
+            display: none;
+
+            &.show {
+                display: block;
+            }
+        }
+
+        .control {
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            margin-top: 8px;
+        }
+    }
+
+    &#setup_menu {
+        .selector {
+            label {
+                color: var(--yellow);
+                font-size: 1.75rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            input {
+                display: none;
+
+                &:checked + label {
+                    color: var(--darker-yellow);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
